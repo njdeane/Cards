@@ -14,5 +14,5 @@ struct Card: Identifiable {
   var imageName: String
   var callToAction: String
   var message: String
-  var gradientColor: [String]
+  var gradientColors: [Color]
 }

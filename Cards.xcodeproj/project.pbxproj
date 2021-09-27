@@ -12,11 +12,37 @@
 		A6C83EAB2701A82200DD29A7 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C83EAA2701A82200DD29A7 /* CardData.swift */; };
 		A6C83EAD2701AF1B00DD29A7 /* sound-chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6C83EAC2701AF1B00DD29A7 /* sound-chime.mp3 */; };
 		A6C83EAF2701AF4300DD29A7 /* PlaySounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C83EAE2701AF4300DD29A7 /* PlaySounds.swift */; };
+		A6C83EB52701B4ED00DD29A7 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C83EB42701B4ED00DD29A7 /* Stickers.xcassets */; };
+		A6C83EB92701B4ED00DD29A7 /* CardStickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A6C83EB22701B4EC00DD29A7 /* CardStickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A6EA725B2701969F003DA389 /* CardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EA725A2701969F003DA389 /* CardsApp.swift */; };
 		A6EA725D2701969F003DA389 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EA725C2701969F003DA389 /* ContentView.swift */; };
 		A6EA725F270196A0003DA389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6EA725E270196A0003DA389 /* Assets.xcassets */; };
 		A6EA7262270196A0003DA389 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6EA7261270196A0003DA389 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6C83EB72701B4ED00DD29A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6EA724F2701969F003DA389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6C83EB12701B4EC00DD29A7;
+			remoteInfo = CardStickers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A6C83EBD2701B4ED00DD29A7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A6C83EB92701B4ED00DD29A7 /* CardStickers.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A6C83EA327019F8600DD29A7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -24,6 +50,9 @@
 		A6C83EAA2701A82200DD29A7 /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
 		A6C83EAC2701AF1B00DD29A7 /* sound-chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-chime.mp3"; sourceTree = "<group>"; };
 		A6C83EAE2701AF4300DD29A7 /* PlaySounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySounds.swift; sourceTree = "<group>"; };
+		A6C83EB22701B4EC00DD29A7 /* CardStickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CardStickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6C83EB42701B4ED00DD29A7 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		A6C83EB62701B4ED00DD29A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6EA72572701969F003DA389 /* Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6EA725A2701969F003DA389 /* CardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsApp.swift; sourceTree = "<group>"; };
 		A6EA725C2701969F003DA389 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,10 +96,20 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		A6C83EB32701B4EC00DD29A7 /* CardStickers */ = {
+			isa = PBXGroup;
+			children = (
+				A6C83EB42701B4ED00DD29A7 /* Stickers.xcassets */,
+				A6C83EB62701B4ED00DD29A7 /* Info.plist */,
+			);
+			path = CardStickers;
+			sourceTree = "<group>";
+		};
 		A6EA724E2701969F003DA389 = {
 			isa = PBXGroup;
 			children = (
 				A6EA72592701969F003DA389 /* Cards */,
+				A6C83EB32701B4EC00DD29A7 /* CardStickers */,
 				A6EA72582701969F003DA389 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				A6EA72572701969F003DA389 /* Cards.app */,
+				A6C83EB22701B4EC00DD29A7 /* CardStickers.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +151,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A6C83EB12701B4EC00DD29A7 /* CardStickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6C83EBA2701B4ED00DD29A7 /* Build configuration list for PBXNativeTarget "CardStickers" */;
+			buildPhases = (
+				A6C83EB02701B4EC00DD29A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardStickers;
+			productName = CardStickers;
+			productReference = A6C83EB22701B4EC00DD29A7 /* CardStickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
 		A6EA72562701969F003DA389 /* Cards */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6EA7266270196A0003DA389 /* Build configuration list for PBXNativeTarget "Cards" */;
@@ -118,10 +173,12 @@
 				A6EA72532701969F003DA389 /* Sources */,
 				A6EA72542701969F003DA389 /* Frameworks */,
 				A6EA72552701969F003DA389 /* Resources */,
+				A6C83EBD2701B4ED00DD29A7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A6C83EB82701B4ED00DD29A7 /* PBXTargetDependency */,
 			);
 			name = Cards;
 			productName = Cards;
@@ -137,6 +194,9 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					A6C83EB12701B4EC00DD29A7 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
 					A6EA72562701969F003DA389 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -156,11 +216,20 @@
 			projectRoot = "";
 			targets = (
 				A6EA72562701969F003DA389 /* Cards */,
+				A6C83EB12701B4EC00DD29A7 /* CardStickers */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A6C83EB02701B4EC00DD29A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6C83EB52701B4ED00DD29A7 /* Stickers.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6EA72552701969F003DA389 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,7 +258,45 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A6C83EB82701B4ED00DD29A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6C83EB12701B4EC00DD29A7 /* CardStickers */;
+			targetProxy = A6C83EB72701B4ED00DD29A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		A6C83EBB2701B4ED00DD29A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Messages Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8P82DXK79N;
+				INFOPLIST_FILE = CardStickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicdeane.Cards.CardStickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6C83EBC2701B4ED00DD29A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Messages Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8P82DXK79N;
+				INFOPLIST_FILE = CardStickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicdeane.Cards.CardStickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		A6EA7264270196A0003DA389 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -353,6 +460,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A6C83EBA2701B4ED00DD29A7 /* Build configuration list for PBXNativeTarget "CardStickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6C83EBB2701B4ED00DD29A7 /* Debug */,
+				A6C83EBC2701B4ED00DD29A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A6EA72522701969F003DA389 /* Build configuration list for PBXProject "Cards" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

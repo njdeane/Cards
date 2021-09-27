@@ -29,7 +29,7 @@ struct CardView: View {
       .offset(y: -218)
       
       Button(action: {
-        print("Button was tapped")
+        playSound(sound: "sound-chime", type: "mp3")
       }, label: {
         HStack {
           Text(card.callToAction.uppercased())
